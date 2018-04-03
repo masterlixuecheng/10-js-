@@ -1,0 +1,84 @@
+1、初始化项目仓库 git init
+？代表文件还没有添加到本地的Git上
+还没有被Git管理
+
+2、查看某些文件或文件夹是否被Git管理
+git stastus
+
+3、将某个文件添加到
+git add index.html
+问号变成加号，绿色代表文件被Git管理了
+但还没有提交到Git服务器上
+
+4、批量添加某些文件被Git管理
+表示所有文件 git add . 或 git add--all
+添加一个文件 git add 文件名
+
+5、忽略某些文件不被Git管理
+创建一个.gitingnore   
+通过命令创建
+将要忽略的文件包括扩展名 写入ignore文件里
+  touch .gitignore
+
+6、提交被管理的文件到Git服务器上
+git commit -m"日志"   日志必须写
+
+7、提交时  需要给Git提供账号和密码
+git config --global user.email "邮箱"
+git config --global user.name "用户名"
+
+绿色对勾 说明文件已经被提交到服务器
+红色叹号 表示某个文件被修改了，
+
+文件被修改后，要先执行添加操作（git add .），再提交
+
+8、查看Git版本日志信息：git log
+
+9、回退到某个历史版本
+git reset --hard (commit前6位哈希值)
+
+-------------------------------------------------
+
+1、查看分支
+ git branch
+
+2、创建分支
+ git branch (分支名字)
+
+3、切换到分支
+ git checkout (分支名字)
+
+创建并切换到某一个分支（合并以上两个操作）
+ git checkout -b (分支名称)
+
+4、删除分支
+ git branch -d (分支名字）
+
+5、在master上合并分支
+ git merge (分支名字）在master分支上合并子分支
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
